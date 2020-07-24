@@ -1,0 +1,65 @@
+body {
+    background-color: #e2ac7f;
+  }
+
+#wrap {
+    width: 650px;
+    height: 100%;
+    margin: auto;
+    background-color: #f5f5dc;
+  }
+
+h1 {
+    font-family: Impact, fantasy;
+    font-style: italic;
+    display:block;
+    width: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+}
+
+.heading {
+    border-style: dotted;
+}
+
+.content {
+    border-style: dotted;
+    margin-top: -5px;
+}
+
+.subheading {
+    font-family: monospace;
+    margin-inline-start: 20px;
+    margin-inline-end: 15px;
+}
+
+ul {
+    align-items: center;
+    max-width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    list-style-type: none;
+}
+
+li {
+    font-family: monospace;
+    font-style: italic;
+    font-weight: 100;
+    font-size: large;
+    word-spacing: -2px;
+}
+
+li::first-letter {
+    color: #000000;
+    font-size: xx-large;
+  }
+
+a { 
+    text-decoration: none;
+ }
+
+.copyright {
+    font-family: monospace;
+    text-align: center;
+}

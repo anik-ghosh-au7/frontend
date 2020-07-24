@@ -1,0 +1,12 @@
+html, body {
+    height: 100%;
+  }
+
+div.main {
+    width:400px;
+    margin: auto;
+    border: 3px solid #9bacff;
+    border-spacing: 35px;
+    padding: 10px;
+    background-color: #bbccff;
+  }

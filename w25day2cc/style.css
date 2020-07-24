@@ -1,0 +1,141 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #5d4037;
+}
+
+#wrap {
+  position: relative;
+  top: 10vh;
+  width: 60vw;
+  height: 70vh;
+  border: 1px rebeccapurple solid;
+  margin: auto;
+  background: url(bg.jpg);
+}
+
+#wrap #car {
+  position: absolute;
+  top: 60vh;
+  left: 10vh;
+  width: 80px;
+  height: 100px;
+  background: url(car.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation: move_car_up 20s;
+          animation: move_car_up 20s;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+#wrap #car:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes move_car_up {
+  0% {
+    top: 60vh;
+    left: 10vh;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  23% {
+    top: 25vh;
+    left: 10vh;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    top: 25vh;
+    left: 10vh;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  58% {
+    top: 25vh;
+    left: 85vh;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  60% {
+    top: 25vh;
+    left: 85vh;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  83% {
+    top: 60vh;
+    left: 85vh;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  85% {
+    top: 63vh;
+    left: 85vh;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    top: 63vh;
+    left: 105vh;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes move_car_up {
+  0% {
+    top: 60vh;
+    left: 10vh;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  23% {
+    top: 25vh;
+    left: 10vh;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    top: 25vh;
+    left: 10vh;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  58% {
+    top: 25vh;
+    left: 85vh;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  60% {
+    top: 25vh;
+    left: 85vh;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  83% {
+    top: 60vh;
+    left: 85vh;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  85% {
+    top: 63vh;
+    left: 85vh;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    top: 63vh;
+    left: 105vh;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

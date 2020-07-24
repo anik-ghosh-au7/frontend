@@ -1,0 +1,78 @@
+$base-color: #5d4037;
+$border-color: rebeccapurple;
+$top_position: 60vh;
+$left_position: 10vh;
+$rotate_degree: 0deg;
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: $base-color;
+  }
+
+#wrap {
+    position: relative;
+    top: 10vh;
+    width: 60vw;
+    height: 70vh;
+    border: 1px $border-color solid;
+    margin: auto;
+    background: url(bg.jpg);
+    & #car {
+        position: absolute;
+        top: 60vh;
+        left: 10vh;
+        width: 80px;
+        height: 100px;
+        background: url(car.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: move_car_up 20s;
+        animation-play-state: paused;
+        &:hover {
+            animation-play-state: running;
+        }
+    }
+  }
+
+@keyframes move_car_up {
+    0% {top: $top_position;
+        left: $left_position;
+        transform: rotate($rotate_degree);
+    }
+    23% {top: $top_position - 35;
+        left: $left_position;
+        transform: rotate($rotate_degree);
+    }
+    25% {top: $top_position - 35;
+        left: $left_position;
+        transform: rotate($rotate_degree + 90);
+    }
+    58% {
+        top: $top_position - 35;
+        left: $left_position + 75;
+        transform: rotate($rotate_degree + 90);
+    }
+    60% {
+        top: $top_position - 35;
+        left: $left_position + 75;
+        transform: rotate($rotate_degree + 180); 
+    }
+    83% {
+        top: $top_position;
+        left: $left_position + 75;
+        transform: rotate($rotate_degree + 180); 
+    }
+    85% {
+        top: $top_position + 3;
+        left: $left_position + 75;
+        transform: rotate($rotate_degree + 90); 
+    }
+    100% {
+        top: $top_position + 3;
+        left: $left_position + 95;
+        transform: rotate($rotate_degree + 90); 
+    }
+  }

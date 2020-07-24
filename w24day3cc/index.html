@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Invoice</title>
+</head>
+<body>
+    <div class="main">
+        <form action="mailto:tech.anikghosh@gmail.com" method="POST">
+            <div>
+                <fieldset>
+                    <legend>Purchases</legend><br>
+                    <div>
+                        <label for="product">Product name:</label><br>
+                        <select name="product" required>
+                            <option value=""></option>
+                            <option value="keyboard">Keyboard</option>
+                            <option value="mouse">Mouse</option>
+                            <option value="mic">Mic</option>
+                            <option value="headset">Head set</option>
+                        </select>
+                    </div><br>
+                    <div>
+                        <label for="quantity">Quantity:</label><br>
+                        <input type="text" name="quantity" required>
+                    </div><br>
+                </fieldset>
+            </div><br>
+
+            <div>
+              <fieldset>
+                <legend>Personal Details</legend><br>
+                <div>
+                    <label for="first_name">First Name:</label><br>
+                    <input type="text" name="first_name" required>
+                </div><br>
+                <div>
+                    <label for="last_name">Last Name:</label><br>
+                    <input type="text" name="last_name" required>
+                </div><br>
+              </fieldset>
+            </div><br>
+
+            <div>
+                <fieldset>
+                  <legend>Credit Card Details</legend><br>
+                  <div>
+                    <label for="card_type">Credit Card Type:</label><br>
+                    <input type="radio" name="card_type" value="visa" required>
+                    <label for="visa">Visa</label><br>
+                    <input type="radio" name="card_type" value="mastercard" required>
+                    <label for="mastercard">Mastercard</label>
+                </div><br>
+                  <div>
+                      <label for="first_name">Credit Card Number:</label><br>
+                      <input type="text" name="first_name" required>
+                  </div><br>
+                  <div>
+                      <label for="last_name">Expiry Date:</label><br>
+                      <input type="text" name="last_name" required>
+                  </div><br>
+                </fieldset>
+              </div><br>
+
+              <div>
+                <fieldset>
+                  <legend>Billing Information</legend><br>
+                  <div>
+                    <div>
+                        <label for="postal_address">Postal Address:</label>
+                    </div>
+                    <div>
+                        <textarea name="postal_address" rows="5" cols="35" required>
+                        </textarea>
+                    </div>
+                  </div><br>
+                  <div>
+                    <div>
+                        <label for="home_address">Home Address:</label>
+                        <input type="checkbox" name="home_address" value="yes">
+                        <label>Same as above</label>
+                    </div>
+                    <div>
+                        <textarea name="home_address" rows="5" cols="35">
+                        </textarea>
+                    </div>
+                  </div><br>
+                </fieldset>
+              </div><br>
+              <input type="submit" name ="submit" value="Place my order">
+        </form>
+    </div>
+</body>
+</html>

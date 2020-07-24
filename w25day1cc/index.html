@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function hoverFn(id) {
+            document.getElementById(id).classList.add('animated');
+            setTimeout(() => {
+                document.getElementById(id).classList.remove('animated');
+            }, 20000)
+        }
+    </script>
+    <title>Car Parking</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="car" onmouseover="hoverFn('car')"></div>
+    </div>
+</body>
+</html>
